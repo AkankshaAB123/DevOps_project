@@ -1,0 +1,123 @@
+/* BASE */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #ece5dd;
+}
+
+/* APP */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* HEADER */
+.header {
+  background: #075e54;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CHAT AREA */
+.chat-container {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MESSAGE BUBBLES */
+.bubble {
+  max-width: 65%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin: 6px 0;
+  font-size: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* USER (RIGHT) */
+.right {
+  background: #dcf8c6;
+  align-self: flex-end;
+}
+
+/* BOT (LEFT) */
+.left {
+  background: #ffffff;
+  align-self: flex-start;
+}
+
+/* INPUT AREA (FIXED POSITION) */
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+/* INPUT FIELD */
+.input-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: #ffffff;
+}
+
+/* BUTTON BASE */
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+/* SEND BUTTON */
+.send-btn {
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+}
+
+/* SUGGEST BUTTON */
+.suggest-btn {
+  background: #34b7f1;
+  color: white;
+}
+
+/* SUGGESTIONS */
+.suggestion-box {
+  padding: 10px;
+  background: #f7f7f7;
+}
+
+/* CARD */
+.suggestion-card {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.suggestion-card span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* HOVER */
+.suggestion-card:hover {
+  background: #e6ffe6;
+}

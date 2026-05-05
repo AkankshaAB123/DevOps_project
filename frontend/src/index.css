@@ -1,0 +1,18 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ece5dd; /* WhatsApp light background */
+  height: 100vh;
+}
+
+/* Root container */
+#root {
+  height: 100%;
+}
