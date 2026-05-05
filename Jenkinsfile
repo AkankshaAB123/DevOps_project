@@ -5,14 +5,23 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/AkankshaAB123/DevOps_project.git'
+                git branch: 'main', url: 'https://github.com/AkankshaAB123/DevOps_project.git'
             }
         }
 
-        stage('Build') {
+        stage('Build Backend') {
             steps {
-                sh 'cd backend && npm install'
-                sh 'cd frontend && npm install'
+                dir('backend') {
+                    sh 'npm install'
+                }
+            }
+        }
+
+        stage('Build Frontend') {
+            steps {
+                dir('frontend') {
+                    sh 'npm install'
+                }
             }
         }
 
